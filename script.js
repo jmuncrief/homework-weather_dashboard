@@ -48,7 +48,7 @@ $(document).ready(function () {
   function getForecast(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=" + apiKey + "&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=" + apiKey + "&units=imperial",
       // dataType: "json",
     }).then(function (data) {
       $("#forecast").html("").append("<div class=\"row\">");
